@@ -15,9 +15,10 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### Backend Run
 ```
-npm run lint
+cd CityInfoBackend
+python manage.py runserver
 ```
 
 ### 组件已注册警告
