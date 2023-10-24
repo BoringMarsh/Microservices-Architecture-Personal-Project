@@ -195,7 +195,7 @@
             </div>
         </div>
 
-        <div class="result-prices-container" ref="result-prices">
+        <div class="result-prices-container" id="result-prices">
             <p> 物价信息：From Rapid API </p>
 
             <el-table :data="city.prices" class="result-prices-table" :header-cell-style="{
@@ -320,15 +320,6 @@ export default {
         this.getPrices();
         //this.getWeather();
         //this.initMap();
-
-        const indexes = JSON.parse(localStorage.getItem("indexes"));
-        var indexComponents = {};
-        indexes.forEach(item => {
-            const refName = "result" + item.engName.slice(0, 1).toUpperCase() + item.engName.slice(1, item.engName.length);
-            indexComponents[refName] = this.$refs[refName];
-            //localStorage.setItem(refName, JSON.stringify(this.$refs[refName]));
-        });
-        localStorage.setItem("indexComponents", JSON.stringify(indexComponents));
     },
     beforeDestroy() {
         console.log("离开");

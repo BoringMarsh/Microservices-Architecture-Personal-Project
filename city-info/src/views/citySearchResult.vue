@@ -61,7 +61,7 @@ import { ElTable, ElTableColumn } from 'element-plus';
 import { getCitySearch } from '../axios/citySearch.js';
 import { addSearchRecord } from '../axios/backendAPI/searchRecord';
 import qs from 'qs';
-import moment from 'moment';
+//import moment from 'moment';
 
 export default {
     data() {
@@ -101,15 +101,14 @@ export default {
             localStorage.setItem("keyword", "beijing");
         },
         addRecord: function() {
-            addSearchRecord("/record/add/", qs.stringify({  //需要使用qs包中的stringify函数将JSON转化为form-data格式，否则后端接收数据为空
-                city_name: this.keyword,
-                result_count: this.resultCities.length,
-                time: moment(new Date()).format("YYYY-MM-DD HH:MM:SS")
-            })).then(res => {
-                console.log(res);
-            }, err => {
-                console.log(err);
-            });
+            // addSearchRecord("/record/add/", qs.stringify({  //需要使用qs包中的stringify函数将JSON转化为form-data格式，否则后端接收数据为空
+            //     city_name: this.keyword,
+            //     result_count: this.resultCities.length
+            // })).then(res => {
+            //     console.log(res);
+            // }, err => {
+            //     console.log(err);
+            // });
         }
     },
     watch: {

@@ -99,6 +99,7 @@
             </div>
 
             <button @click="getRecord"> getRecord </button>
+            <button @click="deleteRecord"> deleteRecord </button>
         </div>
     </div>
     
@@ -106,7 +107,7 @@
 
 <script>
 import detailIndexButton from './components/detailIndexButton.vue';
-import { getSearchRecord } from './axios/backendAPI/searchRecord';
+import { getSearchRecord, deleteSearchRecord } from './axios/backendAPI/searchRecord';
 
 export default {
     data() {
@@ -135,6 +136,7 @@ export default {
             toolBarImages: {
                 "info": "关于",
                 "options": "设置",
+                "history": "历史",
                 "home": "主页"
             },
             
@@ -194,12 +196,8 @@ export default {
             }
         },
         scrollToContainers: function(name) {
-            const refName = "result" + name.slice(0, 1).toUpperCase() + name.slice(1, name.length);
-            const indexComponents = JSON.parse(localStorage.getItem("indexComponents"));
-            const targetComponent = indexComponents[refName];
-            console.log(indexComponents);
-            console.log(targetComponent);
-            //targetComponent.scrollIntoView({ behavior: "smooth" })
+            const targetComponent = document.getElementById("result-" + name)
+            targetComponent.scrollIntoView({ behavior: "smooth" })
         },
         getRecord: function() {
             var that = this;
@@ -207,7 +205,16 @@ export default {
             getSearchRecord("/record/").then(res => {
                 console.log(res);
             }, err => {
+                console.log(err);
+            });
+        },
+        deleteRecord: function() {
+            var that = this;
+
+            deleteSearchRecord("/record/delete/11/").then(res => {
                 console.log(res);
+            }, err => {
+                console.log(err);
             });
         }
     },

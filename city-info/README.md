@@ -15,8 +15,10 @@ npm run serve
 npm run build
 ```
 
-### Backend Run
-已部署，见CityInfoBackend文件夹
+### Lints and fixes files
+```
+npm run lint
+```
 
 ### 组件已注册警告
 ```js

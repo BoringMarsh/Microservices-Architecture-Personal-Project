@@ -2,7 +2,7 @@
 ```sh
 pip install django
 pip install djangorestframework
-pip install django-cors-header
+pip install django-cors-headers
 pip install pymysql
 ```
 
@@ -60,6 +60,10 @@ DATABASES = {
         "PASSWORD": "密码"
     }
 }
+
+TIME_ZONE = 'Asia/Shanghai'  # 设置时区，尽管数据库存储的是UTC时间，但为了支持多时区，只要满足取出数据时是当地时间就行
+
+USE_TZ = True  # 使用django自带pytz库，负责时区转换
 ```
 
 ##把project/urls.py修改为：
@@ -74,16 +78,19 @@ urlpatterns = [
 ##将app.models.py改为：
 ```py
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 
 class account(models.Model):
     name = models.CharField(max_length=20)
+    register_time = models.DateTimeField(default=timezone.now)  # 时间字段加上这个可以自动加上当前时间（UTC）
 ```
 一个model类对应一张表
     1.类名对应表名
     2.类字段表示表字段
     3.类字段初值表示数据类型(max_length限制长度)
+    4.如果有关于时间的字段，要在括号内加上auto_now_add=True。否则会报关于时间的错误，相关请求不成功!!!
 
 ##将app.serializers.py设为：
 ```py
@@ -95,6 +102,7 @@ from rest_framework import serializers
 class AccountSerializer(serializers.Serializer):
     id = serializers.IntegerField(read_only=True)
     name = serializers.CharField(max_length=20)
+    register_time = serializers.DateTimeField()
 ```
 
 ##在app/views.py中改为：

@@ -4,7 +4,7 @@ const searchRecordInstance = axios.create({
     //各接口
     //  传回所有record：/record
     //  添加record：/record/add
-    baseURL: "http://127.0.0.1:8000/api",
+    baseURL: "http://100.80.100.58:80/api",
     timeout: 5000
 });
 
@@ -34,4 +34,10 @@ export function getSearchRecord(url, params) {
 
 export function addSearchRecord(url, data) {
     return searchRecordInstance.post(url, data);
+}
+
+export function deleteSearchRecord(url, data) {
+    return searchRecordInstance.delete(url, {
+        data: data
+    });
 }
