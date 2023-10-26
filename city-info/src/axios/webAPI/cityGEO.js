@@ -5,7 +5,7 @@ const cityGEOInstance = axios.create({
     //  搜索城市：/geo/cities
     //  查国家货币：/locale/currencies
     baseURL: "https://wft-geo-db.p.rapidapi.com/v1",
-    timeout: 5000
+    timeout: 30000
 });
 
 cityGEOInstance.interceptors.request.use(

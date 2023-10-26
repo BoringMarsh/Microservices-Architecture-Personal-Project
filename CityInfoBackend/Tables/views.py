@@ -39,3 +39,13 @@ def RecordDeleteById(request, record_id):
             return JsonResponse({ 'error': f'Record id = {record_id} not found' }, status=404)
     else:
         return JsonResponse({ 'message': 'Invalid request method' })
+    
+# 删除所有历史记录
+@csrf_exempt
+def RecordDeleteAll(request):
+    if request.method == 'DELETE':
+        records = record.objects.all()
+        records.delete()
+        return JsonResponse({ 'message': 'Record all deleted successfully' })
+    else:
+        return JsonResponse({ 'error': 'Invalid request method' })

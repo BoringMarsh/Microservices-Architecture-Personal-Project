@@ -1,4 +1,5 @@
-*** Starting uWSGI 2.0.22 (64bit) on [Tue Oct 24 17:07:00 2023] ***
+*********<class 'django.db.models.query.QuerySet'>************
+*** Starting uWSGI 2.0.22 (64bit) on [Thu Oct 26 20:28:45 2023] ***
 compiled with version: 11.4.0 on 24 October 2023 08:12:21
 os: Linux-6.2.0-35-generic #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
 nodename: vbchemi
@@ -17,22 +18,20 @@ lock engine: pthread robust mutexes
 thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
 Python version: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
-Python main interpreter initialized at 0x55798643b010
+Python main interpreter initialized at 0x5571f4fe4020
 python threads support enabled
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 416720 bytes (406 KB) for 8 cores
 *** Operational MODE: preforking+threaded ***
-ModuleNotFoundError: No module named 'Project'
-unable to load app 0 (mountpoint='') (callable not found or import error)
-*** no app loaded. going in full dynamic mode ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5571f4fe4020 pid: 5084 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 10709)
-spawned uWSGI worker 1 (pid: 10720, cores: 2)
-spawned uWSGI worker 2 (pid: 10721, cores: 2)
-spawned uWSGI worker 3 (pid: 10723, cores: 2)
-spawned uWSGI worker 4 (pid: 10725, cores: 2)
-*** Starting uWSGI 2.0.22 (64bit) on [Tue Oct 24 17:07:56 2023] ***
+spawned uWSGI master process (pid: 5084)
+spawned uWSGI worker 1 (pid: 5087, cores: 2)
+spawned uWSGI worker 2 (pid: 5089, cores: 2)
+spawned uWSGI worker 3 (pid: 5090, cores: 2)
+spawned uWSGI worker 4 (pid: 5091, cores: 2)
+*** Starting uWSGI 2.0.22 (64bit) on [Thu Oct 26 20:30:21 2023] ***
 compiled with version: 11.4.0 on 24 October 2023 08:12:21
 os: Linux-6.2.0-35-generic #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
 nodename: vbchemi
@@ -51,30 +50,20 @@ lock engine: pthread robust mutexes
 thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
 Python version: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
-Python main interpreter initialized at 0x556ba1807010
+Python main interpreter initialized at 0x5628eca8d020
 python threads support enabled
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 416720 bytes (406 KB) for 8 cores
 *** Operational MODE: preforking+threaded ***
-ModuleNotFoundError: No module named 'Project'
-unable to load app 0 (mountpoint='') (callable not found or import error)
-*** no app loaded. going in full dynamic mode ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5628eca8d020 pid: 5146 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 10757)
-spawned uWSGI worker 1 (pid: 10766, cores: 2)
-spawned uWSGI worker 2 (pid: 10767, cores: 2)
-spawned uWSGI worker 3 (pid: 10768, cores: 2)
-spawned uWSGI worker 4 (pid: 10771, cores: 2)
---- no python application found, check your startup logs for errors ---
---- no python application found, check your startup logs for errors ---
---- no python application found, check your startup logs for errors ---
---- no python application found, check your startup logs for errors ---
---- no python application found, check your startup logs for errors ---
---- no python application found, check your startup logs for errors ---
---- no python application found, check your startup logs for errors ---
---- no python application found, check your startup logs for errors ---
-*** Starting uWSGI 2.0.22 (64bit) on [Tue Oct 24 17:21:13 2023] ***
+spawned uWSGI master process (pid: 5146)
+spawned uWSGI worker 1 (pid: 5148, cores: 2)
+spawned uWSGI worker 2 (pid: 5149, cores: 2)
+spawned uWSGI worker 3 (pid: 5151, cores: 2)
+spawned uWSGI worker 4 (pid: 5152, cores: 2)
+*** Starting uWSGI 2.0.22 (64bit) on [Thu Oct 26 20:46:50 2023] ***
 compiled with version: 11.4.0 on 24 October 2023 08:12:21
 os: Linux-6.2.0-35-generic #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
 nodename: vbchemi
@@ -93,23 +82,20 @@ lock engine: pthread robust mutexes
 thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
 Python version: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
-Python main interpreter initialized at 0x55cb6feef160
+Python main interpreter initialized at 0x55f72001a020
 python threads support enabled
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 416720 bytes (406 KB) for 8 cores
 *** Operational MODE: preforking+threaded ***
-ModuleNotFoundError: No module named 'Project'
-unable to load app 0 (mountpoint='') (callable not found or import error)
-*** no app loaded. going in full dynamic mode ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f72001a020 pid: 5266 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 11892)
-spawned uWSGI worker 1 (pid: 11900, cores: 2)
-spawned uWSGI worker 2 (pid: 11901, cores: 2)
-spawned uWSGI worker 3 (pid: 11903, cores: 2)
-spawned uWSGI worker 4 (pid: 11905, cores: 2)
---- no python application found, check your startup logs for errors ---
-*** Starting uWSGI 2.0.22 (64bit) on [Tue Oct 24 17:23:37 2023] ***
+spawned uWSGI master process (pid: 5266)
+spawned uWSGI worker 1 (pid: 5269, cores: 2)
+spawned uWSGI worker 2 (pid: 5271, cores: 2)
+spawned uWSGI worker 3 (pid: 5273, cores: 2)
+spawned uWSGI worker 4 (pid: 5275, cores: 2)
+*** Starting uWSGI 2.0.22 (64bit) on [Thu Oct 26 21:10:10 2023] ***
 compiled with version: 11.4.0 on 24 October 2023 08:12:21
 os: Linux-6.2.0-35-generic #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
 nodename: vbchemi
@@ -128,78 +114,20 @@ lock engine: pthread robust mutexes
 thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
 Python version: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
-Python main interpreter initialized at 0x561a3d369160
+Python main interpreter initialized at 0x5624a8b15020
 python threads support enabled
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 416720 bytes (406 KB) for 8 cores
 *** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561a3d369160 pid: 12081 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5624a8b15020 pid: 5810 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 12081)
-spawned uWSGI worker 1 (pid: 12091, cores: 2)
-spawned uWSGI worker 2 (pid: 12093, cores: 2)
-spawned uWSGI worker 3 (pid: 12094, cores: 2)
-spawned uWSGI worker 4 (pid: 12096, cores: 2)
-************************POSTING**********************
-<QueryDict: {'city_name': ['昌吉东路'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:63']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['昌吉东路'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:07']}>
-/home/chemistrymaster/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField record.time received a naive datetime (2023-10-24 17:10:07) while time zone support is active.
-  warnings.warn(
-************************POSTING**********************
-<QueryDict: {'city_name': ['昌吉东路'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:98']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['昌吉东路'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:45']}>
-/home/chemistrymaster/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField record.time received a naive datetime (2023-10-24 17:10:45) while time zone support is active.
-  warnings.warn(
-************************POSTING**********************
-<QueryDict: {'city_name': ['昌吉东路'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:59']}>
-/home/chemistrymaster/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField record.time received a naive datetime (2023-10-24 17:10:59) while time zone support is active.
-  warnings.warn(
-************************POSTING**********************
-<QueryDict: {'city_name': ['昌吉东路'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:82']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['123'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:64']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['123'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:15']}>
-/home/chemistrymaster/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField record.time received a naive datetime (2023-10-24 17:10:15) while time zone support is active.
-  warnings.warn(
-************************POSTING**********************
-<QueryDict: {'city_name': ['123'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:81']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['123'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:81']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['123'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:44']}>
-/home/chemistrymaster/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField record.time received a naive datetime (2023-10-24 17:10:44) while time zone support is active.
-  warnings.warn(
-************************POSTING**********************
-<QueryDict: {'city_name': ['123'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:52']}>
-/home/chemistrymaster/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField record.time received a naive datetime (2023-10-24 17:10:52) while time zone support is active.
-  warnings.warn(
-************************POSTING**********************
-<QueryDict: {'city_name': ['123'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:28']}>
-/home/chemistrymaster/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField record.time received a naive datetime (2023-10-24 17:10:28) while time zone support is active.
-  warnings.warn(
-************************POSTING**********************
-<QueryDict: {'city_name': ['123'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:00']}>
-/home/chemistrymaster/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField record.time received a naive datetime (2023-10-24 17:10:00) while time zone support is active.
-  warnings.warn(
-************************POSTING**********************
-<QueryDict: {'city_name': ['123'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:79']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:89']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:48']}>
-/home/chemistrymaster/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField record.time received a naive datetime (2023-10-24 17:10:48) while time zone support is active.
-  warnings.warn(
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:83']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:00']}>
-/home/chemistrymaster/.local/lib/python3.10/site-packages/django/db/models/fields/__init__.py:1595: RuntimeWarning: DateTimeField record.time received a naive datetime (2023-10-24 17:10:00) while time zone support is active.
-  warnings.warn(
-*** Starting uWSGI 2.0.22 (64bit) on [Tue Oct 24 17:51:35 2023] ***
+spawned uWSGI master process (pid: 5810)
+spawned uWSGI worker 1 (pid: 5814, cores: 2)
+spawned uWSGI worker 2 (pid: 5816, cores: 2)
+spawned uWSGI worker 3 (pid: 5818, cores: 2)
+spawned uWSGI worker 4 (pid: 5820, cores: 2)
+*** Starting uWSGI 2.0.22 (64bit) on [Thu Oct 26 23:03:01 2023] ***
 compiled with version: 11.4.0 on 24 October 2023 08:12:21
 os: Linux-6.2.0-35-generic #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
 nodename: vbchemi
@@ -218,229 +146,17 @@ lock engine: pthread robust mutexes
 thunder lock: disabled (you can enable it with --thunder-lock)
 uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
 Python version: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
-Python main interpreter initialized at 0x5578813adf30
+Python main interpreter initialized at 0x55c669c17020
 python threads support enabled
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 416720 bytes (406 KB) for 8 cores
 *** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5578813adf30 pid: 13202 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c669c17020 pid: 3745 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 13202)
-spawned uWSGI worker 1 (pid: 13204, cores: 2)
-spawned uWSGI worker 2 (pid: 13206, cores: 2)
-spawned uWSGI worker 3 (pid: 13207, cores: 2)
-spawned uWSGI worker 4 (pid: 13209, cores: 2)
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:62']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:54']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:14']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:31']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:48']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:35']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:13']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:58']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:43']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:12']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:07']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:10:96']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['3222'], 'result_count': ['20'], 'time': ['2023-10-24 17:53:43']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:06']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:07']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:08']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:09']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:10']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:11']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:11']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:12']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:13']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:13']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:14']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:15']}>
-************************POSTING**********************
-<QueryDict: {'city_name': ['644'], 'result_count': ['20'], 'time': ['2023-10-24 17:55:16']}>
-*** Starting uWSGI 2.0.22 (64bit) on [Wed Oct 25 00:02:06 2023] ***
-compiled with version: 11.4.0 on 24 October 2023 08:12:21
-os: Linux-6.2.0-35-generic #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
-nodename: vbchemi
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 4
-current working directory: /home/chemistrymaster/桌面/CityInfoBackend
-writing pidfile to uwsgi.pid
-detected binary path: /home/chemistrymaster/.local/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-chdir() to /home/chemistrymaster/桌面/CityInfoBackend
-your processes number limit is 7537
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
-Python version: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
-Python main interpreter initialized at 0x562295c77160
-python threads support enabled
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 416720 bytes (406 KB) for 8 cores
-*** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x562295c77160 pid: 5770 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 5770)
-spawned uWSGI worker 1 (pid: 5778, cores: 2)
-spawned uWSGI worker 2 (pid: 5780, cores: 2)
-spawned uWSGI worker 3 (pid: 5782, cores: 2)
-spawned uWSGI worker 4 (pid: 5784, cores: 2)
-*** Starting uWSGI 2.0.22 (64bit) on [Wed Oct 25 00:11:47 2023] ***
-compiled with version: 11.4.0 on 24 October 2023 08:12:21
-os: Linux-6.2.0-35-generic #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
-nodename: vbchemi
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 4
-current working directory: /home/chemistrymaster/桌面/CityInfoBackend
-writing pidfile to uwsgi.pid
-detected binary path: /home/chemistrymaster/.local/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-chdir() to /home/chemistrymaster/桌面/CityInfoBackend
-your processes number limit is 7537
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
-Python version: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
-Python main interpreter initialized at 0x56059ad15f30
-python threads support enabled
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 416720 bytes (406 KB) for 8 cores
-*** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56059ad15f30 pid: 5962 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 5962)
-spawned uWSGI worker 1 (pid: 5972, cores: 2)
-spawned uWSGI worker 2 (pid: 5973, cores: 2)
-spawned uWSGI worker 3 (pid: 5975, cores: 2)
-spawned uWSGI worker 4 (pid: 5977, cores: 2)
-*** Starting uWSGI 2.0.22 (64bit) on [Wed Oct 25 00:21:24 2023] ***
-compiled with version: 11.4.0 on 24 October 2023 08:12:21
-os: Linux-6.2.0-35-generic #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
-nodename: vbchemi
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 4
-current working directory: /home/chemistrymaster/桌面/CityInfoBackend
-writing pidfile to uwsgi.pid
-detected binary path: /home/chemistrymaster/.local/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-chdir() to /home/chemistrymaster/桌面/CityInfoBackend
-your processes number limit is 7537
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
-Python version: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
-Python main interpreter initialized at 0x563ed50abf30
-python threads support enabled
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 416720 bytes (406 KB) for 8 cores
-*** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563ed50abf30 pid: 6051 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 6051)
-spawned uWSGI worker 1 (pid: 6060, cores: 2)
-spawned uWSGI worker 2 (pid: 6061, cores: 2)
-spawned uWSGI worker 3 (pid: 6063, cores: 2)
-spawned uWSGI worker 4 (pid: 6065, cores: 2)
-*** Starting uWSGI 2.0.22 (64bit) on [Wed Oct 25 00:39:02 2023] ***
-compiled with version: 11.4.0 on 24 October 2023 08:12:21
-os: Linux-6.2.0-35-generic #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
-nodename: vbchemi
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 4
-current working directory: /home/chemistrymaster/桌面/CityInfoBackend
-writing pidfile to uwsgi.pid
-detected binary path: /home/chemistrymaster/.local/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-chdir() to /home/chemistrymaster/桌面/CityInfoBackend
-your processes number limit is 7537
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
-Python version: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
-Python main interpreter initialized at 0x55a30c671f40
-python threads support enabled
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 416720 bytes (406 KB) for 8 cores
-*** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a30c671f40 pid: 6457 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 6457)
-spawned uWSGI worker 1 (pid: 6469, cores: 2)
-spawned uWSGI worker 2 (pid: 6470, cores: 2)
-spawned uWSGI worker 3 (pid: 6472, cores: 2)
-spawned uWSGI worker 4 (pid: 6474, cores: 2)
-*** Starting uWSGI 2.0.22 (64bit) on [Wed Oct 25 00:45:31 2023] ***
-compiled with version: 11.4.0 on 24 October 2023 08:12:21
-os: Linux-6.2.0-35-generic #35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct  6 10:23:26 UTC 2
-nodename: vbchemi
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 4
-current working directory: /home/chemistrymaster/桌面/CityInfoBackend
-writing pidfile to uwsgi.pid
-detected binary path: /home/chemistrymaster/.local/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-chdir() to /home/chemistrymaster/桌面/CityInfoBackend
-your processes number limit is 7537
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
-Python version: 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0]
-Python main interpreter initialized at 0x563e01192f40
-python threads support enabled
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 416720 bytes (406 KB) for 8 cores
-*** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x563e01192f40 pid: 6619 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 6619)
-spawned uWSGI worker 1 (pid: 6630, cores: 2)
-spawned uWSGI worker 2 (pid: 6632, cores: 2)
-spawned uWSGI worker 3 (pid: 6633, cores: 2)
-spawned uWSGI worker 4 (pid: 6635, cores: 2)
-Wed Oct 25 01:09:21 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+spawned uWSGI master process (pid: 3745)
+spawned uWSGI worker 1 (pid: 3747, cores: 2)
+spawned uWSGI worker 2 (pid: 3748, cores: 2)
+spawned uWSGI worker 3 (pid: 3750, cores: 2)
+spawned uWSGI worker 4 (pid: 3752, cores: 2)
+Fri Oct 27 00:15:10 2023 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!

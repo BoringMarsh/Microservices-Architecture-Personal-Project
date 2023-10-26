@@ -1,35 +1,21 @@
 # city-info
 
-## Project setup
-```
-npm install
-```
+本应用为同济大学软件学院微服务架构课程个人项目
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+选题为二选一：城市信息研究
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 前端：Vue开发，nginx部署
+![](./city-info/src/assets/devtools/vue.png)
+<img src="./city-info/src/assets/devtools/nginx.png" alt="示例图片" width="50%">
 
-### Backend Run
-已部署，见CityInfoBackend文件夹
+## 后端环境：Ubuntu虚拟机+MySQL数据库
+<img src="./city-info/src/assets/devtools/ubuntu.png" alt="示例图片" width="50%">
+<img src="./city-info/src/assets/devtools/mysql.png" alt="示例图片" width="50%">
 
-### 组件已注册警告
-```js
-if (!app.component("name")) {
-    app.component("name", NameComponent);
-}  //先判断组件是否注册，避免重复注册
-```
+## 后端开发：django构建API
+<img src="./city-info/src/assets/devtools/django.png" alt="示例图片" width="50%">
 
-### 报'exmid'为null警告
-```
-浏览器安装了插件，禁用即可
-```
+## 后端部署：uwsgi+nginx
+<img src="./city-info/src/assets/devtools/uwsgi+nginx.png" alt="示例图片" width="50%">
 
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+臭网络人搞出的垃圾，别看

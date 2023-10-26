@@ -5,7 +5,7 @@ const cityCountryInstance = axios.create({
     //  搜索国家：/country
     //  返回所有国家：/countries
     baseURL: "https://rest-countries10.p.rapidapi.com",
-    timeout: 5000
+    timeout: 30000
 });
 
 cityCountryInstance.interceptors.request.use(

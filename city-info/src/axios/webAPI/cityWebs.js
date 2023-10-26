@@ -4,7 +4,7 @@ const cityWebsInstance = axios.create({
     //各接口：
     //  谷歌根据关键词搜索：/
     baseURL: "https://google-search74.p.rapidapi.com",
-    timeout: 5000
+    timeout: 30000
 });
 
 cityWebsInstance.interceptors.request.use(

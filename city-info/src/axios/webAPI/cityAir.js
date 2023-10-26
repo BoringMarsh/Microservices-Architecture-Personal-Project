@@ -9,7 +9,7 @@ const cityAirInstance = axios.create({
     //  逐小时空气质量预报：/airhourly
     //  逐日空气质量预报：/airforecast
     baseURL: "https://eolink.o.apispace.com/34324/air/v001",
-    timeout: 5000
+    timeout: 30000
 });
 
 cityAirInstance.interceptors.request.use(

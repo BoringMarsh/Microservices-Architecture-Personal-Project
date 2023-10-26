@@ -5,7 +5,7 @@ const cityPricesInstance = axios.create({
     //  返回所有城市：/cities
     //  查询城市物价：/prices
     baseURL: "https://cost-of-living-and-prices.p.rapidapi.com",
-    timeout: 5000
+    timeout: 30000
 });
 
 cityPricesInstance.interceptors.request.use(

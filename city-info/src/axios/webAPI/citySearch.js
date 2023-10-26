@@ -4,7 +4,7 @@ const citySearchInstance = axios.create({
     //各接口：
     //  搜索城市：/city
     baseURL: "https://eolink.o.apispace.com/456456/function/v001",
-    timeout: 5000
+    timeout: 30000
 });
 
 citySearchInstance.interceptors.request.use(

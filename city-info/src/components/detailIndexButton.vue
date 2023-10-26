@@ -1,6 +1,9 @@
 <template>
+    <!-- 自定义组件：导航栏按钮 -->
     <span class="button" :style="getBackgroundColor">
-        <img :src="src" alt="image src invalid">
+        <!-- 图标 -->
+        <img :src="src" alt="image src invalid">  
+        <!-- 文字 -->
         <label> {{ detailName }} </label>
     </span>
     
@@ -10,9 +13,9 @@
 export default {
     name: "detailIndexButton",
     props: {
-        src: String,
-        detailName: String,
-        color: String
+        src: String,         //图标url
+        detailName: String,  //文字
+        color: String        //背景颜色
     },
     data() {
         return {
@@ -20,6 +23,7 @@ export default {
         }
     },
     methods: {
+        //动态获取按键样式
         getBackgroundColor: function() {
             return {
                 backgroundColor: this.color

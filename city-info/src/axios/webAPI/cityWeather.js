@@ -7,7 +7,7 @@ const cityWeatherInstance = axios.create({
     //  逐3小时预报：/3hours
     //  15天预报：/day
     baseURL: "https://eolink.o.apispace.com/456456/weather/v001",
-    timeout: 5000
+    timeout: 30000
 });
 
 cityWeatherInstance.interceptors.request.use(

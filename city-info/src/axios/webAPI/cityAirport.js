@@ -4,7 +4,7 @@ const cityAirportInstance = axios.create({
     //各接口：
     //  查找机场：/airports（后面有/的为查找机场，无/的为列出所有机场）
     baseURL: "https://world-airports-directory.p.rapidapi.com/v1",
-    timeout: 5000
+    timeout: 30000
 });
 
 cityAirportInstance.interceptors.request.use(
