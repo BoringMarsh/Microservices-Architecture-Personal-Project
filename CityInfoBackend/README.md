@@ -1,6 +1,11 @@
 # city-info后端
 
-除配置方法文档外，将city-info.conf文件放到nginx配置文件夹。其余shell脚本是在调试过程中简化操作而创建。
+- shell脚本是在调试过程中简化操作而创建
+- nginx的.conf配置文件可以从这个目录复制到/etc/nginx/conf.d文件夹中，也可以按照配置方法文档：
+  ```
+  本GitHub项目/files/configuration&deployment/uwsgi+nginx(ubuntu).md
+  ```
+  里面说的步骤创建一个.conf文件
 
 ## 更改项目nginx配置文件
 ```sh
