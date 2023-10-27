@@ -1,7 +1,7 @@
-##pip install uwsgi
+## pip install uwsgi
 报错：AttributeError: module 'os' has no attribute 'uname'。因为uwsgiconfig.py文件中，os.uname()是不支持windows系统的，platform模块是支持任何系统。
 
-##下载uwsgi离线安装
+## 下载uwsgi离线安装
 https://pypi.python.org/pypi/uWSGI/
 解压后cd进目录，在uwsgi.h第172行找到：
 ```c
@@ -21,12 +21,14 @@ python setup.py install
 
 ---
 
-##安装uwsgi
+还是老老实实回Linux
+
+## 安装uwsgi
 ```sh
 pip install uwsgi
 ```
 
-##简单示例
+## 简单示例
 新建test.py：
 ```py
 def application(env, start_response):
@@ -42,19 +44,19 @@ uwsgi --http :8001 --wsgi-file test.py
 
 ---
 
-##安装nginx
+## 安装nginx
 ```sh
 sudo apt-get install nginx
 ```
 
-##测试django项目
+## 测试django项目
 ```sh
 cd django项目目录
 python3 manage.py runserver
 # 进行各项测试
 ```
 
-##配置uwsgi
+## 配置uwsgi
 在django项目目录加上uwsgi.pid、run.log、uwsgi.ini三个文件，并进入uwsgi.ini文件中
 ```sh
 touch uwsgi.pid
@@ -77,7 +79,7 @@ disable-logging = true
 ```
 保存退出
 
-##配置nginx
+## 配置nginx
 终端输入：
 ```sh
 sudo nginx -t
@@ -115,10 +117,10 @@ server {
 sudo nginx -t
 ```
 
-##运行
+## 运行
 ```sh
 sudo service nginx restart  # 重启nginx
-sudo killall -9 uwsgi       # 关闭uwsgi进程
+sudo killall -9 uwsgi       # 关闭原有uwsgi进程
 cd 项目目录
 uwsgi uwsgi.ini             # 根据uwsgi.ini配置启动uwsgi
 ```

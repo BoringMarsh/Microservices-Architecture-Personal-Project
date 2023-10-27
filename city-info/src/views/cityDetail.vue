@@ -345,13 +345,13 @@ export default {
         this.city["prices"] = [];     //给city对象添加prices域
 
         this.tickTime();      //开始按秒更新当地时间
-        // this.getCountry();    //调用接口，获取城市所属国家信息
-        // this.getInfo();       //调用接口，获取城市所属地区信息
-        // this.getAirport();    //调用接口，获取城市机场信息
-        // this.getWebs();       //调用接口，获取城市相关网页信息
-        // this.getPrices();     //调用接口，获取城市物价信息
-        // this.getWeather();    //调用接口，获取城市天气信息
-        // this.getAir();        //调用接口，获取城市空气信息
+        this.getCountry();    //调用接口，获取城市所属国家信息
+        this.getInfo();       //调用接口，获取城市所属地区信息
+        this.getAirport();    //调用接口，获取城市机场信息
+        this.getWebs();       //调用接口，获取城市相关网页信息
+        this.getPrices();     //调用接口，获取城市物价信息
+        this.getWeather();    //调用接口，获取城市天气信息
+        this.getAir();        //调用接口，获取城市空气信息
         this.initMap();       //加载城市高德地图
     },
     beforeDestroy() {

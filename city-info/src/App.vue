@@ -495,7 +495,7 @@ export default {
 .content {
     position: relative;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     z-index: 2;
 }
 .background {

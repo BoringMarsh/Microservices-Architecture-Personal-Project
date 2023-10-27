@@ -1,4 +1,4 @@
-##安装必要的包
+## 安装必要的包
 ```sh
 pip install django
 pip install djangorestframework
@@ -6,24 +6,24 @@ pip install django-cors-headers
 pip install pymysql
 ```
 
-##创建django项目
+## 创建django项目
 ```sh
 django-admin startproject [project-name]
 cd [project-name]
 ```
 
-##在项目下创建app（简单情况下一个app操纵一张表）
+## 在项目下创建app
 ```sh
 django-admin startapp [app-name]
 ```
 
-##在project/__init__.py中加上：
+## 在project/__init__.py中加上：
 ```py
 import pymysql
 pymysql.install_as_MySQLdb()
 ```
 
-##在project/settings.py中修改：
+## 在project/settings.py中修改：
 ```py
 INSTALLED_APPS = [
 	...
@@ -65,8 +65,13 @@ TIME_ZONE = 'Asia/Shanghai'  # 设置时区，尽管数据库存储的是UTC时�
 
 USE_TZ = True  # 使用django自带pytz库，负责时区转换
 ```
+要部署的时候，加上：
+```py
+DEBUG = False
+ALLOWED_HOSTS = ['*']
+```
 
-##把project/urls.py修改为：
+## 把project/urls.py修改为：
 ```py
 from django.urls import path, include
 
@@ -75,7 +80,7 @@ urlpatterns = [
 ]
 ```
 
-##将app.models.py改为：
+## 将app.models.py改为：
 ```py
 from django.db import models
 from django.utils import timezone
@@ -92,7 +97,7 @@ class account(models.Model):
     3.类字段初值表示数据类型(max_length限制长度)
     4.如果有关于时间的字段，要在括号内加上auto_now_add=True。否则会报关于时间的错误，相关请求不成功!!!
 
-##将app.serializers.py设为：
+## 将app.serializers.py设为：
 ```py
 from .models import 表名
 from rest_framework import serializers
@@ -105,11 +110,12 @@ class AccountSerializer(serializers.Serializer):
     register_time = serializers.DateTimeField()
 ```
 
-##在app/views.py中改为：
+## 在app/views.py中改为：
 ```py
 from rest_framework import generics
 from .models import account
 from .serializers import AccountSerializer
+from django.views.decorators.csrf import csrf_exempt
 
 class AccountGetAll(generics.ListCreateAPIView):
     queryset = account.objects.all()
@@ -118,21 +124,42 @@ class AccountGetAll(generics.ListCreateAPIView):
 class AccountGetById(generics.RetrieveUpdateDestroyAPIView):
     queryset = account.objects.all()
     serializer_class = AccountSerializer
+
+# 不用序列化器，将SQL操作当成函数执行（头部注解防止跨域访问受阻）
+def AccountAdd(request):
+    if request.method == 'POST':  # 判断请求类型
+        # 取请求体中的数据
+        # 注意：数组要用'array[index]'名直接取，用array去取是None
+        # 如果不知道要怎么取，可以先print(request.POST)（不是request.data！！！万恶的GPT）
+        name = request.POST.get('name')
+        register_time = request.POST.get('register_time')
+        new_account = account(name=name, register_time=register_time)  # 创建新记录
+
+        # 将记录存到数据库中
+        # 删调用delete()，查用表名.objects.all()等各方法取，改就是将新记录赋给查得到的结果
+        new_account.save()
+
+        # 必须return，否则前端习惯写console.log(res)，此时没return会报500错误
+        return JsonResponse({ 'message': 'Record added successfully' })
+    else:
+        return JsonResponse({ 'message': 'Invalid request method' })
 ```
 
-##在app/urls.py中定义api地址：
+## 在app/urls.py中定义api地址：
 ```py
 from django.urls import path
 from .views import AccountGetAll, AccountGetById
+from app名.views import AccountAdd  # import函数不能省app名，否则报错
 
 urlpatterns = [
     # 尾部带/
-    path('account/', AccountGetAll.as_view(), name='yourmodel-list'),
-    path('yourmodel/<int:pk>/', AccountGetById.as_view(), name='yourmodel-detail'),
+    path('account/', AccountGetAll.as_view(), name='account-get-all'),
+    path('account/<int:pk>/', AccountGetById.as_view(), name='account-get-by-id'),
+    path('account/add/', AccountAdd, name='account/add')
 ]
 ```
 
-##在命令行运行以下指令：
+## 在命令行运行以下指令：
 ```sh
 python manage.py migrate               # 创建表结构
 python manage.py makemigrations app名  # 让 Django 知道我们在我们的模型有一些变更
@@ -140,7 +167,7 @@ python manage.py migrate app名         # 创建表结构
 ```
 最后生成表：app名_类名。以上面为例，生成的表名为testmodel_account(里面除了指定的name字段，还自带一个id字段)
 
-##启动后端服务器
+## 启动后端服务器
 ```sh
 python manage.py runserver  # 观察输出获取端口号等信息
 ```
