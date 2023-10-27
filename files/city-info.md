@@ -498,3 +498,31 @@ addRecord(url, qs.stringify({
 ### 心得
 本次项目是一次有意义的尝试，技术不精的我踩到的坑很多。但除了查询资料外，我也得到了包括室友在内许多同学的宝贵建议，让我感激不尽。
 无论如何，通过技术为用户提供信息资源，这是十分有成就感的一件事。期待未来能像改进展望中提到的一样，继续改进和拓展这个项目，为更多的用户提供价值。
+
+---
+
+## Documents of the web APIs
+
+1. 高德地图
+> https://lbs.amap.com/api/javascript-api/guide/map/lifecycle
+
+2. 城市物价
+> https://rapidapi.com/traveltables/api/cost-of-living-and-prices
+
+3. 相关网页
+> https://rapidapi.com/herosAPI/api/google-search74
+
+4. 国家信息
+> https://rapidapi.com/alejandro.perez3469/api/rest-countries10
+
+5. 机场查询
+> https://rapidapi.com/karanp41-eRiF1pYLK1P/api/world-airports-directory
+
+6. 人口、货币、所属国家
+> https://rapidapi.com/wirefreethought/api/geodb-cities
+
+7. 空气质量
+> https://www.apispace.com/eolink/api/34324/apiDocument
+
+8. 天气预报
+> https://www.apispace.com/eolink/api/456456/apiDocument
